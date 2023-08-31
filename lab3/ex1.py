@@ -12,10 +12,10 @@ y3 = np.sin(x + 1)
 y4 = np.sin(x + 1.5)
 
 # Create a plot
-plt.plot(x, y1 , color ="blue", linestyle="dotted")
-plt.plot(x, y2 , color ="green", linestyle="dashdot")
-plt.plot(x, y3 , color ="orange", linestyle="dashed")
-plt.plot(x, y4 , color ="gray", linestyle="solid")
+plt.plot(x, y1, color="blue", linestyle="dotted")
+plt.plot(x, y2, color="green", linestyle="dashdot")
+plt.plot(x, y3, color="orange", linestyle="dashed")
+plt.plot(x, y4, color="gray", linestyle="solid")
 
 # # Add labels and title
 # plt.xlabel('X-axis')
