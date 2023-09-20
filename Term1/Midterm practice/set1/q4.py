@@ -18,15 +18,14 @@ if width <= 0 or height <= 0 or thickness <= 0:
     print("Invalid input")
     exit()
 
-for h in range(height):
-    if h < thickness or h >= height - thickness:
-        for i in range(width):
+for r in range(height):
+    for c in range(width):
+        if r in range(0, thickness) or r in range(height-thickness, height):
             print(random.choice(border_characters), end="")
-        print()
-    else:
-        for w in range(width):
-            if w < thickness or w >= width - thickness:
-                print(random.choice(border_characters), end="")
-            else:
-                print(" ", end="")
-        print()
+        elif c in range(0, thickness) or c in range(width-thickness, width):
+            print(random.choice(border_characters), end="")
+            c += 1
+        else:
+            print(" ", end="")
+            c += 1
+    print()
