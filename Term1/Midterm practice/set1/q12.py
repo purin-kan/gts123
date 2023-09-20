@@ -4,7 +4,12 @@ second = input("Give me another character: ")
 if not first.isalpha() and not second.isalpha():
     print("You need to input two characters.")
     exit()
-
+    
+if first > second:
+    temp = first
+    first = second
+    second = temp
+    
 alphabets = "abcdefghijklmnopqretuvwxyz"
 
 firstIndex = -1
@@ -23,6 +28,3 @@ if firstIndex == -1 or secondIndex == -1:
 print("Output: ")
 for i in range(firstIndex, secondIndex + 1):
     print(alphabets[i], end="")
-
-
-

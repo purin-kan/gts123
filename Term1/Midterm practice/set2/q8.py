@@ -9,5 +9,3 @@ else:
 if size < 3:
     print("Your input is invalid")
     exit()
-
-
