@@ -16,6 +16,8 @@ pay = []
 
 remaining = borrowed
 
+remaining = remaining * (1 + interest / 100)
+
 for i in range(duration - 1):
     pay.append(int(input("Input: pay at the end of year %d " % (i + 1))))
 
@@ -24,7 +26,5 @@ for i in range(duration - 1):
     else:
         print("You already cleared your loan")
         exit()
-
-remaining = remaining * (1 + interest / 100)
 
 print("Output: To clear you loan, you need to repay %.3f at the end of year %d" % (remaining, duration))
