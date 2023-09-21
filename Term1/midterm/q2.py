@@ -7,25 +7,13 @@ else:
     input = input.upper()
     
 for i in range(len(input)):
-    if input[i] not in ["A", "E", "I", "O", "U"]:
+    if input[i] not in "AEIOU":
         print('Invalid input, valid characters: ["A", "E", "I", "O", "U"]')
         exit()
 
-start = 0
-
-for j in range(6):
-    for k in range(start, 3):
-        print(input[k], end="")
-    for l in range(2, start-1, -1):
-        print(input[l], end="")
-    print()
-    start += 1
- 
-
-    
-# 012
-# 021
-# 102
-# 120
-# 201
-# 210
+for vowel in input:
+    x = input.replace(vowel, "")
+    for i in x:
+        y = x.replace(i, "")
+        print("%s%s%s" % (vowel, i, y))
+        
