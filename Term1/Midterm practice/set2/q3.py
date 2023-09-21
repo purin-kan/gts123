@@ -7,5 +7,4 @@ for i, num in enumerate(input):
                 print("#", end="")
             else:
                 print("*", end="")
-                
         print()
