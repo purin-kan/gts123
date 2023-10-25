@@ -7,3 +7,4 @@ if len(input_list) >= 3:
         print(" ".join(perm))
 else:
     print("List must contain at least 3 elements.")
+    
