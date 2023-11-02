@@ -16,5 +16,3 @@ if good_sequence:
     print("good sequence")
 else: 
     print("not good sequence")
-
-sequence = input("Input: ").split()
