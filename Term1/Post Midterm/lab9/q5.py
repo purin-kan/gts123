@@ -22,21 +22,24 @@ def Movietype():
             print("Wrong movie type! Please select again.")
 
 
-def Ticketprice(seatType, movieType):
-    if seatType in ['p', 'P']:
-        if movieType == 1:
+def Ticketprice():
+    global globalSeatType
+    global globalMovieType
+    
+    if globalSeatType in ['p', 'P']:
+        if globalMovieType == 1:
             return 100
-        elif movieType == 2:
+        elif globalMovieType == 2:
             return 120
-    elif seatType in ['d', 'D']:
-        if movieType == 1:
+    elif globalSeatType in ['d', 'D']:
+        if globalMovieType == 1:
             return 140
-        elif movieType == 2:
+        elif globalMovieType == 2:
             return 200
-    elif seatType in ['h', 'H']:
-        if movieType == 1:
+    elif globalSeatType in ['h', 'H']:
+        if globalMovieType == 1:
             return 400
-        elif movieType == 2:
+        elif globalMovieType == 2:
             return 500
 
 
@@ -46,4 +49,4 @@ globalMovieType = 0
 seatType()
 Movietype()
 
-print("The ticket price is %s" % Ticketprice(globalSeatType, globalMovieType))
+print("The ticket price is %s" % Ticketprice())
