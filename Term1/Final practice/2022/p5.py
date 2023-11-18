@@ -8,7 +8,7 @@ while True:
         print("Invalid input, please try again.")
         continue
     
-    if not all(map(lambda x: (float(x)) > 0, userInput)):
+    if not all(map(lambda x: float(x) > 0, userInput)):
         print("Invalid input, please try again.")
         continue
     
