@@ -4,5 +4,6 @@
         "editor.defaultFormatter": "ms-python.autopep8"
     },
     "python.formatting.provider": "none",
-    "codetogether.virtualCursorJoin": "ownVirtualCursor"
+    "codetogether.virtualCursorJoin": "ownVirtualCursor",
+    "python.analysis.autoImportCompletions": false
 }
